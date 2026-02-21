@@ -7,7 +7,7 @@ const HomeHeroText = () => {
       <div className="uppercase text-[9vw] leading-[0.95]">L'étincelle</div>
       <div className="uppercase text-[9vw] leading-[0.95] flex">
         qui
-        <div className="h-[15vh] w-[16vw] rounded-full  overflow-hidden">
+        <div className="h-[15vh] w-[16vw] rounded-full overflow-hidden">
           <Video />
         </div>
         génère
