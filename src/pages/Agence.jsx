@@ -23,8 +23,14 @@ const Agence = () => {
         trigger: imgDivRef.current,
         start: "top 20%",
         end: "top -120%",
-        scrub: true,
+        scrub: 1,
         pin: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        anticipatePin: true,
+        invalidateOnRefresh: true,
+
         onUpdate: (e) => {
           let index;
           if (e.progress < 1) {
@@ -41,10 +47,10 @@ const Agence = () => {
 
   return (
     <div>
-      <div className="section-1 text-black">
+      <div className="section-1 text-black py-1">
         <div
           ref={imgDivRef}
-          className="border-black h-100 w-75 left-[30%] top-[20%] rounded-3xl bg-amber-300 overflow-hidden absolute"
+          className="border-black h-100 w-75 left-[29%] top-70 rounded-3xl bg-amber-300 overflow-hidden absolute"
         >
           <img
             ref={imgRef}
