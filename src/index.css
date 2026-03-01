@@ -6,6 +6,8 @@
   /* background-color: black; */
 }
 
+
+
 @font-face {
   font-family: lau1;
   src: url("src/assets/Lausanne-300.woff2");
@@ -14,4 +16,29 @@
 @font-face {
   font-family: lau2;
   src: url("src/assets/Lausanne-500.woff2");
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 8s linear infinite;
 }

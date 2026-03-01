@@ -16,13 +16,13 @@ const Stairs = ({ children }) => {
     tl.from(".stairs", {
       height: 0,
       stagger: {
-        amount: -0.25,
+        amount: -0.2,
       },
     });
     tl.to(".stairs", {
       y: "100%",
       stagger: {
-        amount: -0.25,
+        amount: -0.2,
       },
     });
     tl.to(stairParent.current, {

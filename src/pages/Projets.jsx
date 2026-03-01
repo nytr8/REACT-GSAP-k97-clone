@@ -35,7 +35,7 @@ const Projects = () => {
       scrollTrigger: {
         trigger: ".lol",
         start: "top 100%",
-        end: "top -170%",
+        end: "top -150%",
         scrub: true,
       },
     });
@@ -45,6 +45,7 @@ const Projects = () => {
       <div className="pt-80">
         <h2 className="text-black font-[lau2] uppercase">
           <span className=" text-[22vh]">projets</span>
+          <sup className="font-[lau2] text-[4vh] align-top top-20">17</sup>
         </h2>
       </div>
       <div className="lol -mt-20 p-2 ">
