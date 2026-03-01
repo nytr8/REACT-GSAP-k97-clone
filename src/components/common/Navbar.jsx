@@ -45,7 +45,7 @@ const Navbar = () => {
             ></path>
           </svg>
         </Link>
-        {!checker ? (
+        {!checker && currentLocation != "/projets" ? (
           <div
             onClick={() => {
               setchecker(!checker);
